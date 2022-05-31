@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style/style.css">
+    <title>Document</title>
+    <link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/npm/toastify-js/src/toastify.min.css">
+</head>
+<body>
+    <header>
+        <nav>
+            <ul class="secciones">
+                <li><a href="index.html">INICIO</a></li>
+                <li><a href="inmuebles.html">INMUEBLES</a></li>
+                <li><a href="departamentos.html">DEPARTAMENTOS</a></li>
+                <li><a href="reservas.html">RESERVAS</a></li>
+                <li><a href="contacto.html">CONTACTO</a></li> 
+
+
+        </nav>
+
+    </header>
+
+
+    <ul id="listado"></ul>
+
+<section>
+   
+    <h1 class="section-title">SISTEMA DE RESERVAS - INMOBILARIA</h1>
+
+<div class="caja">
+<h3 class="titulo">Selecciona la casa que quieras ver</h3>
+<select class="option">
+    <option value="Seleccionar">Seleccionar</option>
+    <option value="casa1">casa1</option>
+    <option value="casa2">casa2</option>
+    <option value="departamento1">departamento1</option>
+    <option value="departamento2">departamento2</option>
+</select>
+</div>
+<div>
+<p>Consulte los dias y horarios disponibles</p>
+<a class="btn btn-common btn-rm" href="#" onclick="app.mostrarCasas();">Consultar</a>
+<select class="seleccion">
+    <option value="Seleccionar">Seleccionar dia</option>
+    <option value="lunes">LUNES</option>
+    <option value="martes">MARTES</option>
+    <option value="miercoles">MIERCOLES</option>
+    <option value="jueves">JUEVES</option>
+    <option value="viernes">VIERNES</option>
+</select>
+<button onclick="mostrarAlerta()">Consultar</button>
+</div>
+
+    <div>
+    <h3><a>Consultar Reservas</a></h3>
+    <p>Consulte sus reservas por número de cédula</p>
+
+    <button onclick="mostrarAlerta()">Consultar</button>
+</div>
+</section>
+
+
+    <footer >
+        <div class="datos">
+            <h4>inmueblesArg@gmail.com</h4>
+            <p>numero de telefono: 1150778934</p>
+            <p>numero fijo: 44676606</p>
+
+            <a href="twitter">twitter</a>
+            <a href="facebook.com">facebook</a>
+            <a href="instagram.com">instagram</a>
+        </div>
+    </footer>
+
+
+    <script src="https://cdn.jsdelivr.net/npm/sweetalert2@11.4.14/dist/sweetalert2.all.min.js"></script>
+    <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/toastify-js"></script>
+    <script src="./javascript/reserva.js"></script>
+</body>
+</html>

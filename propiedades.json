@@ -1,0 +1,13 @@
+
+[
+
+    {"ambiente" :5, "zona": "Palermo 756, CABA", "valor" : 15000 },
+
+    {"ambiente":7, "zona": "Salto 4800, Saavedra, CABA", "valor": 20000},
+
+    {"ambiente":4, "zona": "Puerto Escondido Nordelta","valor": 50000},
+    
+    {"ambiente":6, "zona": "Paroissien CABA", "valor": 45000}
+
+
+]
