@@ -14,13 +14,13 @@ localStorage.removeItem("nombre")
 
 
 
-    fetch('clientes.json')
+    fetch('propiedades.json')
     .then(response => response.json())
-    .then(clientes => {
+    .then(propiedades => {
 
-        clientes.forEach((cliente) =>{
+        propiedades.forEach((propiedad) =>{
 
-            let {index, ambiente, zona, valor} = cliente
+            let {index, ambiente, zona, valor} = propiedad
             divClientes.innerHTML += `
             
             <div id="cliente${index}">
