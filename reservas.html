@@ -21,48 +21,57 @@
 
         </nav>
 
+        <h1 class="title-reservas">Reservas</h1>
+
     </header>
 
 
     
 
-<section>
-   
-    <h1 class="section-title">SISTEMA DE RESERVAS - INMOBILARIA</h1>
-
-<div class="caja">
-<h3 class="titulo">Selecciona la casa que quieras ver</h3>
-<select class="option">
-    <option value="Seleccionar">Seleccionar</option>
-    <option value="casa1">casa1</option>
-    <option value="casa2">casa2</option>
-    <option value="departamento1">departamento1</option>
-    <option value="departamento2">departamento2</option>
-</select>
-</div>
-<div>
-<p>Consulte los dias y horarios disponibles</p>
-<a class="btn btn-common btn-rm" href="#" onclick="app.mostrarCasas();">Consultar</a>
-<select class="seleccion">
-    <option value="Seleccionar">Seleccionar dia</option>
-    <option value="lunes">LUNES</option>
-    <option value="martes">MARTES</option>
-    <option value="miercoles">MIERCOLES</option>
-    <option value="jueves">JUEVES</option>
-    <option value="viernes">VIERNES</option>
-</select>
-<button onclick="mostrarAlerta()">Consultar</button>
-</div>
-
-    <div>
-    <h3><a>Consultar Reservas</a></h3>
-    <p>Consulte sus reservas por número de cédula</p>
-
-    <button onclick="mostrarAlerta()">Consultar</button>
-</div>
-</section>
-
-
+    <section>
+      <div class="container">
+        <div class="row">
+          <h1 class="titulo">SISTEMA DE RESERVAS - Inmuebles</h1>
+        </div>
+        <div class="row">
+          <div id="menu1" class="col-xs-12 col-md-6 col-lg-4">
+            <div class="about-item">
+              <div class="about-text">
+                <h3><a>Consultar Inmuebles</a></h3>
+                <p>Consulte los dias y horarios disponibles</p>
+                <a  id="consultas" class="btn btn-common btn-rm" href="#" onclick="app.mostrarPropiedades();">Consultar</a>
+              </div>
+            </div>
+          </div>
+          <div id="menu2" class="col-xs-12 col-md-6 col-lg-4">
+            <div class="about-item">
+              <div class="about-text">
+                <h3><a>Consultar Reservas</a></h3>
+                <p>Consulte sus reservas por número de cédular</p>
+                <input id="Consulta" class="mb-20 form-control" name="cedula" placeholder="Ingresa tu número de DNI">
+                <a class="btn btn-common btn-rm" href="#" onclick="app.consultarReserva();">Consultar</a>
+              </div>
+            </div>
+          </div>
+          <div id="campodoc" style="display: none;">
+            <form action="javascript:void(0);" method="POST" id="reserva">
+              <p id="datoscasas"></p>
+              <input type="text" id="documento" placeholder="Cedula de Ciudadania">
+              <input type="submit" value="Reservar" />
+            </form>
+          </div>
+          <div class="row">
+            <div>
+              <table>
+                <tbody id="propiedades"></tbody>
+              </table>
+            </div>
+          </div>
+        </div>
+        <br>
+        <a id="btnback" style="display: none;" href="#" class="btn btn-common btn-rm" onclick="app.Volver();">Volver</a>
+      </div>
+    </section>
     <footer >
         <div class="datos">
             <h4>inmueblesArg@gmail.com</h4>
